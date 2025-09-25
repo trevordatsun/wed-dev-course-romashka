@@ -1,11 +1,39 @@
 # Игнорируем системные файлы
 .DS_Store
+.D5_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # Игнорируем логи и временные файлы
 *.log
 *.tmp
+*.temp
+*.cache
 
 # Игнорируем папки редактора
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Игнорируем зависимости (самое важное для Node.js проектов)
+node_modules/
+/dist
+/build
+
+# Игнорируем файлы окружения (не коммитить пароли и ключи!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Игнорируем папки пакетных менеджеров (если будете использовать)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+
+# Игнорируем папку автогенерируемой документации
+doc/
