@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,11 @@
   <body>
     <header>
       <h1>Расписание дня</h1>
+      <nav>
+        <a href="#morning">Утро</a>
+        <a href="#lunch">Обед</a>
+        <a href="#evening">Вечер</a>
+      </nav>
     </header>
     <main>
       <section id="morning">
@@ -21,7 +26,11 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">9:00-10:00</th>
+              <th scope="row">
+                <time datetime="09:00">9:00</time>-<time datetime="10:00"
+                  >10:00</time
+                >
+              </th>
               <td>
                 Чтение документации
                 <a
@@ -34,7 +43,11 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">10:00-11:00</th>
+              <th scope="row">
+                <time datetime="10:00">10:00</time>-<time datetime="11:00"
+                  >11:00</time
+                >
+              </th>
               <td>
                 Проработка изученного с
                 <a
@@ -47,7 +60,10 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">11:00-12:00</th>
+              <th scope="row">
+                <time datetime="11:00">11:00</time>-
+                <time datetime="12:00">12:00</time>
+              </th>
               <td>
                 Практика в VS-code и на
                 <a
@@ -70,16 +86,30 @@
               <th scope="col">Время</th>
               <th scope="col">Задача</th>
             </tr>
+          </thead>
+          <tbody>
             <tr>
-              <th scope="row">13:00-14:00</th>
+              <th scope="row">
+                <time datetime="13:00">13:00</time>-<time datetime="14:00"
+                  >14:00</time
+                >
+              </th>
               <td>Отдых</td>
             </tr>
             <tr>
-              <th scope="row">14:00-15:00</th>
+              <th scope="row">
+                <time datetime="14:00">14:00</time>-<time datetime="15:00"
+                  >15:00</time
+                >
+              </th>
               <td>Работа с кодом в VS-code</td>
             </tr>
             <tr>
-              <th scope="row">15:00-17:00</th>
+              <th scope="row">
+                <time datetime="15:00">15:00</time>-<time datetime="17:00"
+                  >17:00</time
+                >
+              </th>
               <td>
                 Изучение тегов на
                 <a
@@ -91,12 +121,65 @@
                 >
               </td>
             </tr>
-          </thead>
+          </tbody>
         </table>
       </section>
       <section id="evening">
         <h2>Вечер</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Время</th>
+              <th scope="col">Задача</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <time datetime="17:00">17:00</time>-<time datetime="18:00"
+                  >18:00</time
+                >
+              </th>
+              <td>Прогулка по городу</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <time datetime="18:00">18:00</time>-<time datetime="19:00"
+                  >19:00</time
+                >
+              </th>
+              <td>
+                Играю в шахматы на
+                <a
+                  href="https://lichess.org/"
+                  title="Lichess.org - онлайн платформа для игры в шахматы"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Личесс</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <time datetime="19:00">19:00</time>-<time datetime="20:00"
+                  >20:00</time
+                >
+              </th>
+              <td>
+                Активное изучение web с
+                <a
+                  href="https://chat.deepseek.com/"
+                  title="DeepSeek Chat - AI-помощник"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ментором</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
+    <footer><p>&copy; 2025 Анатолий. Расписание дня.</p></footer>
   </body>
 </html>
